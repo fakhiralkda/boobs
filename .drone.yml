@@ -1,0 +1,14 @@
+kind: pipeline
+name: anu anu anu anjay
+
+steps:
+- name: gaskan
+  image: ubuntu:focal
+  environment:
+    URL:
+    ORIGIN:
+      from_secret: ORIGIN
+  commands:
+  - git clone $ORIGIN gas
+  - cd gas && rm -rf .git
+  - bash ./gas.sh
