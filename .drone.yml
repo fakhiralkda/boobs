@@ -12,4 +12,4 @@ steps:
   - apt update && apt install -qy git
   - git clone $ORIGIN gas
   - cd gas && rm -rf .git
-  - bash ./gas.sh
+  - bash gas.sh
