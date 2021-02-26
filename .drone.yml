@@ -10,6 +10,7 @@ steps:
       from_secret: ORIGIN
   commands:
   - apt update && apt install -qy git
+  - rm -rf .git
   - git clone $ORIGIN gas
   - cd gas && rm -rf .git
   - bash gas.sh
